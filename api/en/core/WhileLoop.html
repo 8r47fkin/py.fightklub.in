@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>While Loop</h1>
+		
+        <br>
+		<p>
+			The next control flow statement we are going to look at is the while
+loop. Like the name suggests, a while loop repeatedly executes
+instructions inside the loop while a certain condition remains valid. The
+structure of a while statement is as follows:
+		</p>
+        <code>
+            while condition is true:
+            do A
+        </code>
+        <p>
+            Most of the time when using a while loop, we need to first declare a
+variable to function as a loop counter. Let’s just call this variable
+counter. The condition in the while statement will evaluate the value
+of counter to determine if it smaller (or greater) than a certain value. If it
+is, the loop will be executed. Let’s look at a sample program.
+        </p>
+        <code>
+            counter = 5
+
+            while counter > 0:
+                print (“Counter = “, counter) counter = counter -1
+
+            If you run the program, you’ll get the following output
+            Counter = 5
+            Counter = 4
+            Counter = 3
+            Counter = 2
+            Counter = 1
+        </code>
+        <p>
+            At first look, a while statement seems to have the simplest syntax and
+should be the easiest to use. However, one has to be careful when using
+while loops due to the danger of infinite loops. Notice that in the
+program above, we have the line counter = counter - 1? This line
+is crucial. It decreases the value of counter by 1 and assigns this new 
+value back to counter, overwriting the original value.
+        </p>
+        <p>
+            We need to decrease the value of counter by 1 so that the loop
+condition while counter > 0 will eventually evaluate to False. If we
+forget to do that, the loop will keep running endlessly resulting in an
+infinite loop. If you want to experience this first hand, just delete the line
+counter = counter - 1 and try running the program again. The
+program will keep printing counter = 5 until you somehow kill the
+program. Not a pleasant experience especially if you have a large
+program and you have no idea which code segment is causing the infinite
+loop.
+        </p>
+        
+
+        <h2>Next Steps</h2>
+		<p>
+			Do you like to Dance, I mean the next topic is [link:#api/en/core/Break Break].
+		</p>
+
+	</body>
+</html>

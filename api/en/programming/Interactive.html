@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>Making Your Program Interactive</h1>
+		
+        <br>
+		<p>
+			Now that we’ve covered the basics of variables, let us write a program
+that makes use of them. We’ll revisit the “Hello World” program we wrote
+at Start, but this time we’ll make it interactive. Instead of just saying
+hello to the world, we want the world to know our names and ages too. In
+order to do that, our program needs to be able to prompt us for
+information and display them on the screen.
+		</p>
+        <p>
+            Two built-in functions can do that for us: input() and print().               
+        </p>
+        
+        <p>
+            For now, let’s type the following program in IDLE. Save it and run it.
+        </p>
+
+        <p>
+            <code>
+                myName = input("Please enter your name: ")
+                myAge = input("What about your age: ")
+            </code>
+            <code>
+                print ("Hello World, my name is", myName, "and I am", myAge, "years old.")
+            </code>
+            <i>
+                The program should prompt you for your name.
+            </i>
+            <code>
+                Please enter your name:
+            </code>
+            <p>
+                Supposed you entered Bharath. Now press Enter and it’ll prompt you for
+your age.
+            </p>
+            <code>
+                What about your age:
+            </code>
+            <p>
+                Say you keyed in 33. Now press Enter again. You should get the
+following statement:
+            </p>
+            <code>
+                Hello World, my name is Bharath and I am 33 years old.
+            </code>
+        </p>
+
+        <h2>Next Steps</h2>
+
+		<p>
+			Let's dig deeper into [link:#api/en/programming/Input input()].
+		</p>
+
+	</body>
+</html>

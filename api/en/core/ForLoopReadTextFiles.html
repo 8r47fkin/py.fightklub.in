@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>Using a For Loop to Read Text Files</h1>
+		
+        <br>
+		<p>
+			In addition to using the readline() method above to read a text file, we
+can also use a for loop. In fact, the for loop is a more elegant and
+efficient way to read text files. The following program shows how this is
+done.
+<code>
+    f = open (‘myfile.txt’, 'r')
+    for line in f:
+        print (line, end = ‘’)
+    f.close()
+</code>
+The for loop loops through the text file line by line. When you run it,
+you’ll get
+<code>
+            Welcome to fightklub.in
+            First rule of fightklub.in is, we talk about fightklub.in
+            second rule of fightklub.in is, let's talk loud about fightklub.in
+            http://www.fightklub.in/
+</code>
+		</p>
+        <h2>Next Steps</h2>
+		<p>
+			Lets [link:#api/en/core/WritingTextFile write to a text files].
+		</p>
+
+	</body>
+</html>

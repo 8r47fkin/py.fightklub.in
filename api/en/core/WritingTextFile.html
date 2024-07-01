@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>Writing to a Text File</h1>
+		
+        <br>
+		<p>
+			Now that we’ve learned how to open and read a file, let’s try writing to it.
+To do that, we’ll use the ‘a’ (append) mode. You can also use the ‘w’
+mode, but you’ll erase all previous content in the file if the file already
+exists. Try running the following program.
+<code>
+    f = open (‘myfile.txt’,'a')
+    f.write(‘\nThis sentence will be appended.’)
+    f.write(‘\nPython is Fun!’)
+    f.close()
+</code>
+		</p>
+        <p>
+            Here we use the write() function to append the two sentences ‘This
+sentence will be appended.’ and ‘Python is Fun!’ to the
+file, each starting on a new line since we used the escape characters
+‘\n’. You’ll get
+<code>
+            Welcome to fightklub.in
+            First rule of fightklub.in is, we talk about fightklub.in
+            second rule of fightklub.in is, let's talk loud about fightklub.in
+            http://www.fightklub.in/ 
+            This sentence will be appended.
+            Python is Fun!
+</code>
+        </p>
+        <h2>Next Steps</h2>
+		<p>
+			Lets Open and Read [link:#api/en/core/ORbyBufferSize text files with buffer sizes].
+		</p>
+
+	</body>
+</html>

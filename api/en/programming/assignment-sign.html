@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+		<h1>The Assignment Sign</h1>
+        <br>
+		<p>
+			Note that the = sign in the statement userAge = 0 has a different
+meaning from the = sign we learned in Math. In programming, the = sign
+is known as an assignment sign. It means we are assigning the value on
+the right side of the = sign to the variable on the left. A good way to
+understand the statement userAge = 0 is to think of it as userAge <-
+0.
+		</p>
+        <p>
+            The statements x = y and y = x have very different meanings in
+programming.
+        </p>
+        <p>
+            Confused? An example will likely clear this up.
+        </p>
+        <p>
+            Type the following code into your IDLE editor and save it.
+        </p>
+        <code>
+            x = 5
+            y = 10
+            x = y
+            print ("x = ", x)
+            print ("y = ", y)
+        </code>
+        <p>
+            Now run the program. You should get this output:
+        </p>
+        <code>
+            x = 10
+            y = 10
+        </code>
+        <p>
+            Although x has an initial value of 5 (declared on the first line), the third
+line x = y assigns the value of y to x (x <- y), hence changing the
+value of x to 10 while the value of y remains unchanged
+        </p>
+        <p>
+            Next, modify the program by changing ONLY ONE statement: Change the third line from x = y to y = x. Mathematically, x = y and y = x mean
+            the same thing. However, this is not so in programming.            
+        </p>
+        <p>
+            Run the second program. You will now get
+        </p>
+        <code>
+            x = 5
+            y = 5
+        </code>
+        <p>
+            You can see that in this example, the x value remains as 5, but the value
+of y is changed to 5. This is because the statement y = x assigns the
+value of x to y (y <- x). y becomes 5 while x remains unchanged as 5.
+        </p>
+
+		<h2>Next Steps</h2>
+
+		<p>
+			Let's operate with [link:#api/en/programming/basic-operators basic operators].
+		</p>
+
+	</body>
+</html>

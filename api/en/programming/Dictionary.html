@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>[name]</h1>
+		
+        <br>
+		<p>
+			Dictionary is a collection of related data PAIRS. For instance, if we want
+to store the username and age of 5 users, we can store them in a
+dictionary.
+		</p>
+        <p>
+            To declare a dictionary, you write dictionaryName = {dictionary
+                key : data}, with the requirement that dictionary keys must be unique
+                (within one dictionary). That is, you cannot declare a dictionary like this
+                myDictionary = {“Bharath”:33, “Kumar”:66, “Bharath”:13}.                
+        </p>
+        
+        <p>
+            This is because “Bharath” is used as the dictionary key twice. Note that we
+use curly brackets { } when declaring a dictionary. Multiple pairs are
+separated by a comma.
+        </p>
+        <i>
+            Example: 
+        </i>
+        <code>
+            userNameAndAge = {
+                “Bharath”:33,
+                “Kumar”:66,
+                “Cdart”:13,
+                “Cdart”:“Not Available”
+            }
+                
+        </code>
+        <p>
+            You can also declare a dictionary using the dict( ) method. To declare
+the userNameAndAge dictionary above, you write
+        </p>
+        <code>
+            userNameAndAge = dict(Bharath = 33, Kumar = 66, Aadhi = 13, Cdart = “Not Available”)
+        </code>
+        <p>
+            When you use this method to declare a dictionary, you use round
+brackets ( ) instead of curly brackets { } and you do not put quotation
+marks for the dictionary keys.
+        </p>
+        <p>
+            To access individual items in the dictionary, we use the dictionary key,
+which is the first value in the {dictionary key : data} pair. For
+instance, to get Kumar’s age, you write userNameAndAge[“Kumar”].
+        </p>
+        <p>
+            You’ll get the value 66.
+        </p>
+        <p>
+            To modify items in a dictionary, we write
+            dictionaryName[dictionary key of item to be modified]
+            = new data. For instance, to modify the “Kumar”:66 pair, we write
+            userNameAndAge[“Kumar”] = 68. Our dictionary now becomes
+            <code>
+            userNameAndAge = {
+                “Bharath”:33,
+                “Kumar”:68,
+                “Aadhi”:13,
+                “Cdart”:“Not Available”
+            }
+        </code>
+        </p>
+        <p>
+            We can also declare a dictionary without assigning any initial values to it.
+We simply write dictionaryName = { }. What we have now is an
+empty dictionary with no items in it.
+        </p>
+        <p>
+            To add items to a dictionary, we write dictionaryName[dictionary
+key] = data. For instance, if we want to add “Valarmathi”:63 to our
+dictionary, we write userNameAndAge[“Joe”] = 40. Our dictionary
+now becomes 
+<code>
+        userNameAndAge = {
+            “Bharath”:33,
+            “Kumar”:68,
+            “Aadhi”:13,
+            “Cdart”:“Not Available”,
+            “Valarmathi”:60
+        }
+</code>
+        </p>
+        <p>
+            To remove items from a dictionary, we write del
+dictionaryName[dictionary key]. For instance, to remove the
+“Alex”:13 pair, we write del userNameAndAge[“Alex”]. Our
+dictionary now becomes 
+<code>
+    userNameAndAge = {
+        “Peter”:38,
+        “John”:21,
+        “Alvin”:“Not Available”,
+        “Joe”:40}
+</code>
+        </p>
+        <p>
+            Run the following program to see all these in action.
+        </p>
+        <code>
+            #declaring the dictionary, dictionary keys and data
+can be of different data types
+myDict = {“One”:1.35, 2.5:”Two Point Five”, 3:”+”, 7.9:2}
+        </code>
+        <code>
+            #print the entire dictionary
+            print(myDict)
+            #You’ll get {2.5: 'Two Point Five' , 3: '+','One':1.35, 7.9: 2}
+            #Note that items in a dictionary are not stored in the same order as the way you declare them.
+        </code>
+        <code>
+            #print the item with key = “One”.
+            print(myDict[“One”])
+            #You’ll get 1.35
+        </code>
+        <code>
+            #print the item with key = 7.9.
+            print(myDict[7.9])
+            #You’ll get 2
+        </code>
+        <code>
+            #modify the item with key = 2.5 and print the updated dictionary
+            myDict[2.5] = “Two and a Half”
+            print(myDict)
+            #You’ll get {2.5: 'Two and a Half' , 3: '+', 'One': 1.35, 7.9: 2}
+        </code>
+        <code>
+            #add a new item and print the updated dictionary
+            myDict[“New item”] = “I’m new”
+            print(myDict)
+            #You’ll get {'New item': 'I’m new', 2.5: 'Two and a Half', 3: '+', 'One': 1.35, 7.9: 2}
+        </code>
+        <code>
+            #remove the item with key = “One” and print the updated dictionary del myDict[“One”]
+            print(myDict)
+            #You’ll get {'New item': 'I’m new' , 2.5: 'Two and a Half', 3: '+', 7.9: 2}
+        </code>
+        <p>
+            For more examples and sample codes of working with a dictionary, you
+can refer to Appendix D.
+        </p>
+
+        <h2>Next Steps</h2>
+
+		<p>
+			Let's learn to make our program [link:#api/en/programming/Interactive Interactive].
+		</p>
+
+	</body>
+</html>

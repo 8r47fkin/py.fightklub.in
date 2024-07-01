@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>[name]()</h1>
+		
+        <br>
+		<p>
+			The print() function is used to display information to users. It accepts
+zero or more expressions as parameters, separated by commas.
+		</p>
+        <p>
+            In the statement below, we passed 5 parameters to the print()
+function. Can you identify them?
+        </p>
+        <code>
+            print ("Hello World, my name is", myName, "and I am", myAge, "years old.")
+        </code>
+        <p>
+            The first is the string ”Hello World, my name is”
+The next is the variable myName declared using the input function earlier.
+Next is the string “and I am”, followed by the variable myAge and
+finally the string “years old.”.            
+        </p>
+        
+        <p>
+            Note that we do not use quotation marks when referring to the variables
+myName and myAge. If you use quotation marks, you’ll get the output
+        </p>
+        <code>
+            Hello World, my name is myName and I am myAge years old.
+        </code>
+        <p>
+            instead, which is obviously not what we want.
+        </p>
+        <p>
+            Another way to print a statement with variables is to use the % formatter we learned in Chapter 4. To achieve the same output as the first print statement above, we can write
+        </p>
+        <code>
+            print ("Hello World, my name is %s and I am %s years old." %(myName, myAge))
+        </code>
+        <p>
+            Finally, to print the same statement using the format() method, we write
+        </p>
+        <code>
+            print (“Hello World, my name is {} and I am {} years old”.format(myName, myAge))
+        </code>
+        <p>
+            The print() function is another function that differs in Python 2 and Python 3. In Python 2, you’ll write it without brackets, like this:
+        </p>
+        <code>
+            print "Hello World, my name is " + myName + " and I am " + myAge + " years old."
+        </code>
+
+        <h2>Next Steps</h2>
+		<p>
+			Let's dig deeper into [link:#api/en/programming/TripleQuotes Triple Quotes].
+		</p>
+
+	</body>
+</html>

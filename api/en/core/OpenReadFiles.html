@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>Opening and Reading Text Files</h1>
+		
+        <br>
+		<p>
+			The first type of file we are going to read from is a simple text file with
+multiple lines of text. To do that, let’s first create a text file with the
+following lines.
+		</p>
+        <p>
+            <code>
+            Welcome to fightklub.in
+            First rule of fightklub.in is, we talk about fightklub.in
+            second rule of fightklub.in is, let's talk loud about fightklub.in
+            http://www.fightklub.in/
+          </code>
+        </p>
+        <p>
+            Save this text file as myfile.txt to your desktop. Next, fire up IDLE
+and type the code below. Save this code as fileOperation.py to your
+desktop too.
+        </p>
+        <code>
+            f = open (‘myfile.txt’,'r')
+            firstline = f.readline()
+            secondline = f.readline()
+            print (firstline)
+            print (secondline)
+
+            f.close()
+        </code>
+
+        <p>
+            The first line in the code opens the file. Before we can read from any file,
+we have to open it (just like you need to open any ebook on your kindle
+device or app to read it). The open() function does that and requires two
+parameters:
+        </p>
+        <p>
+            The first parameter is the path to the file. If you did not save
+fileOperation.py and myfile.txt in the same folder (desktop in
+this case), you need to replace ‘myfile.txt’ with the actual path
+where you stored the text file. For instance, if you stored it in a folder
+named ‘PythonFiles’ in your C drive, you have to write
+<code>
+    ‘C:\\PythonFiles\\myfile.txt’ (with double backslash \\).
+</code>
+The second parameter is the mode. This specifies how the file will be
+used. The commonly used modes are
+<code>
+    'r' mode:
+    For reading only.
+
+    'w' mode:
+    For writing only
+</code>
+If the specified file does not exist, it will be created.
+If the specified file exists, any existing data on the file will be erased.
+<code>
+    'a' mode:
+    For appending.
+</code>
+If the specified file does not exist, it will be created.
+If the specified file exist, any data written to the file is automatically added
+to the end
+<code>
+    'r+' mode:
+For both reading and writing.
+</code>
+After opening the file, the next statement firstline =
+f.readline() reads the first line in the file and assigns it to the
+variable firstline.
+        </p>
+        <p>
+            Each time the readline() function is called, it reads a new line from
+the file. In our program, readline() was called twice. Hence the first
+two lines will be read. When you run the program, you’ll get the output:
+        </p>
+        <code>
+            Welcome to fightklub.in
+
+            First rule of fightklub.in is, we talk about fightklub.in
+        </code>
+        <p>
+            You’ll notice that a line break is inserted after each line. This is because
+        the readline() function adds the ‘\n’ characters to the end of each
+        line. If you do not want the extra line between each line of text, you can
+        do print(firstline, end = ‘’). This will remove the ‘\n’
+        characters. After reading and printing the first two lines, the last sentence
+        f.close() closes the file. You should always close the file once you
+        finish reading it to free up any system resources.
+        </p>
+        <h2>Next Steps</h2>
+		<p>
+			Using [link:#api/en/core/ForLoopReadTextFiles For Loop to read text files].
+		</p>
+
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>Opening, Reading and Writing Binary Files</h1>
+		
+        <br>
+		<p>
+			Binary files refer to any file that contains non-text, such as image or video
+files. To work with binary files, we simply use the ‘rb’ or ‘wb’ mode. Copy
+a jpeg file onto your desktop and rename it myimage.jpg. Now edit the
+program above by changing the first two line lines
+<code>
+    inputFile = open (‘myfile.txt’,'r')
+    outputFile = open (‘myoutputfile.txt’,'w')
+
+to
+
+inputFile = open (‘myimage.jpg’,'rb')
+outputFile = open (‘myoutputimage.jpg’,'wb')
+</code>
+Make sure you also change the statement outputFile.write(msg +
+'\n') back to outputFile.write(msg).
+		</p>
+        <p>
+            Run the new program. You should have an additional image file named
+myoutputimage.jpg on your desktop. When you open the image file, it
+should look exactly like myimage.jpg.
+        </p>
+        
+        <h2>Next Steps</h2>
+		<p>
+			Lets [link:#api/en/core/DeletingRenamingFiles Delete and Rename Files].
+		</p>
+
+	</body>
+</html>

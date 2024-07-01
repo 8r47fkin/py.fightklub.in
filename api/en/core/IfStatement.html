@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>If Statement</h1>
+		
+        <br>
+		<p>
+			The if statement is one of the most commonly used control flow
+statements. It allows the program to evaluate if a certain condition is met,
+and to perform the appropriate action based on the result of the
+evaluation. The structure of an if statement is as follows:
+		</p>
+        <code>
+            if condition 1 is met: do A
+            elif condition 2 is met: do B
+            elif condition 3 is met: do C
+            elif condition 4 is met: do D
+            else:
+            do E
+        </code>
+        <p>
+            elif stands for “else if” and you can have as many elif statements as
+you like.
+        </p>
+        <p>
+            If you’ve coded in other languages like C or Java before, you may be
+surprised to notice that no parentheses ( ) are needed in Python after the
+if, elif and else keyword. In addition, Python does not use curly { }
+brackets to define the start and end of the if statement. Rather, Python
+uses indentation. Anything indented is treated as a block of code that will
+be executed if the condition evaluates to true.
+        </p>
+        <p>
+            To fully understand how the if statement works, fire up IDLE and key in
+the following code.
+        </p>
+        <code>
+            userInput = input('Enter 1 or 2: ')
+            if userInput == "1": print ("Hello World") 
+            print (“How are you?”) 
+            elif userInput == "2": print ("Python Rocks!") 
+            print (“I love Python”) 
+            else: print ("You did not enter a valid number")
+        </code>
+        <p>
+            The program first prompts the user for an input using the input function.
+The result is stored in the userInput variable as a string.
+        </p>
+        <p>
+            Next the statement if userInput == "1": compares the
+userInput variable with the string “1”. If the value stored in userInput
+is “1”, the program will execute all statements that are indented until the
+indentation ends. In this example, it’ll print “Hello World”, followed by
+“How are you?”.
+        </p>
+        <p>
+            Alternatively, if the value stored in userInput is “2”, the program will
+print “Python Rocks”, followed by “I love Python”.
+        </p>
+        <p>
+            For all other values, the program will print “You did not enter a
+valid number”.
+        </p>
+        <p>
+            Run the program three times, enter 1, 2 and 3 respectively for each run.
+You’ll get the following output:
+        </p>
+        <code>
+            Enter 1 or 2: 1
+            Hello World
+            How are you?
+        </code>
+        <code>
+            Enter 1 or 2: 2
+            Python Rocks!
+            I love Python
+        </code>
+        <code>
+            Enter 1 or 2: 3
+            You did not enter a valid number
+        </code>
+
+        <h2>Next Steps</h2>
+		<p>
+			Let's make some [link:#api/en/core/InlineIf Inline If].
+		</p>
+
+	</body>
+</html>

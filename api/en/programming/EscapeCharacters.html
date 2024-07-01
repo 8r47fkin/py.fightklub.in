@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>Escape Characters</h1>
+		
+        <br>
+		<p>
+			Sometimes we may need to print some special “unprintable” characters
+such as a tab or a newline. In this case, you need to use the \ (backslash)
+character to escape characters that otherwise have a different meaning.
+		</p>
+        <p>
+            For instance to print a tab, we type the backslash character before the
+letter t, like this: \t. Without the \ character, the letter t will be printed. With
+it, a tab is printed. Hence, if you type print (‘Hello\tWorld’), you’ll
+get Hello World
+        </p>
+        <p>
+            Other common uses of the backslash character are shown below.
+>>> shows the command and the following lines show the output.
+        </p>
+
+        <p><u>\n (Prints a newline)</u></p>
+        <code>
+            >>> print (‘Hello\nWorld’)
+            Hello
+            World
+        </code>
+
+        <p><u>\\ (Prints the backslash character itself)</u></p>
+        <code>
+            >>> print (‘\\’)
+            \
+        </code>
+        
+        <p><u>\” (Prints double quote, so that the double quote does not signal the end of the string)</u></p>
+        <code>
+            >>> print (“I am 5'11\" tall”)
+            I am 5’11” tall
+        </code>
+
+        <p><u>\’ (Print single quote, so that the single quote does not signal the end of the string)</u></p>
+        <code>
+            >>> print (‘I am 5\’11” tall’)
+            I am 5’11” tall
+        </code>
+        <p>
+            If you do not want characters preceded by the \ character to be interpreted as special characters, you can use raw strings by adding an r before the first quote. For instance, if you do not want \t to be interpreted as a tab, you should type print (r‘Hello\tWorld’). You will get Hello\tWorld as the output.          
+        </p>
+
+        <h2>Next Steps</h2>
+		<p>
+			Let's make some [link:#api/en/core/ChoicesAndDecisions Choices and Decisions].
+		</p>
+
+	</body>
+</html>

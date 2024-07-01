@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>Variable Scope</h1>
+		
+        <br>
+		<p>
+			An important concept to understand when defining a function is the
+concept of variable scope. Variables defined inside a function are treated
+differently from variables defined outside. There are two main differences.
+		</p>
+        <p>
+            Firstly, any variable declared inside a function is only accessible within
+the function. These are known as local variables. Any variable declared
+outside a function is known as a global variable and is accessible
+anywhere in the program.
+        </p>
+        <p>
+            To understand this, try the code below:
+            <code>
+                def myFunction():
+                    print(“\nINSIDE THE FUNCTION”) #Global variables are accessible inside a function print (message1)
+                #Declaring a local variable message2 = “Local Variable”
+                    print (message2)
+
+                #Calling the function myFunction()
+
+                print(“\nOUTSIDE THE FUNCTION”)
+                #Global variables are accessible outside function
+                print (message1)
+
+                #Local variables are NOT accessible outside function.
+                print (message2)
+            </code>
+        </p>
+        <p>
+            If you run the program, you will get the output below.
+        </p>
+        <code>
+            INSIDE THE FUNCTION
+            Global Variable
+            Local Variable
+
+            OUTSIDE THE FUNCTION
+            Global Variable
+            NameError: name 'message2' is not defined
+        </code>
+        <p>
+            Within the function, both the local and global variables are accessible.
+Outside the function, the local variable message2 is no longer
+accessible. We get a NameError when we try to access it outside the
+function.
+        </p>
+        <p>
+            The second concept to understand about variable scope is that if a local
+variable shares the same name as a global variable, any code inside the
+function is accessing the local variable. Any code outside is accessing
+the global variable. Try running the code below
+        </p>
+        <code>
+            message1 = "Global Variable (shares same name as a local variable)"
+
+            def myFunction():
+                message1 = "Local Variable (shares same name as a global variable)"
+                print(“\nINSIDE THE FUNCTION”) print(message1)
+
+            # Calling the function myFunction()
+
+            # Printing message1 OUTSIDE the function print
+            (“\nOUTSIDE THE FUNCTION”) print (message1)
+        </code>
+        <p>
+            You’ll get the output as follows:
+<code>
+    INSIDE THE FUNCTION
+    Local Variable (shares same name as a global variable)
+    OUTSIDE THE FUNCTION
+    Global Variable (shares same name as a local variable)
+</code>
+When we print message1 inside the function, it prints "Local
+Variable (shares same name as a global variable)" as it
+is printing the local variable. When we print it outside, it is accessing the
+global variable and hence prints "Global Variable (shares same
+name as a local variable)".
+        </p>
+
+        <h2>Next Steps</h2>
+		<p>
+			Lets import modules to our studies with [link:#api/en/core/ImportingModules importing modules].
+		</p>
+
+	</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>Creating our Own Module</h1>
+		
+        <br>
+		<p>
+			Besides importing built-in modules, we can also create our own modules.
+This is very useful if you have some functions that you want to reuse in
+other programming projects in future.
+		</p>
+        <p>
+            Creating a module is simple. Simply save the file with a .py extension and
+put it in the same folder as the Python file that you are going to import it
+from.
+        </p>
+        <p>
+            Suppose you want to use the checkIfPrime() function defined earlier
+in another Python script. Here’s how you do it. First save the code above
+as prime.py on your desktop. prime.py should have the following
+code.
+        </p>
+        <code>
+            def checkIfPrime (numberToCheck):
+                for x in range(2, numberToCheck):
+                    if (numberToCheck%x == 0):
+                        return False
+                return True
+        </code>
+        <p>
+            Next, create another Python file and name it useCheckIfPrime.py.
+Save it on your desktop as well. useCheckIfPrime.py should have the
+following code.
+        </p>
+        <code>
+            import prime
+            answer = prime.checkIfPrime(13)
+            print (answer)
+        </code>
+        <p>
+            Now run useCheckIfPrime.py. You should get the output True.
+Simple as that.
+        </p>
+        <p>
+            However, suppose you want to store prime.py and useCheckIfPrime.py in different folders. You are going to have to add
+            some codes to useCheckIfPrime.py to tell the Python interpreter
+            where to find the module.            
+        </p>
+        <p>
+            Say you created a folder named ‘MyPythonModules’ in your C drive to
+store prime.py. You need to add the following code to the top of your
+useCheckIfPrime.py file (before the line import prime).
+        </p>
+        <code>
+            import sys
+
+            if 'C:\\MyPythonModules' not in sys.path:
+            sys.path.append('C:\\MyPythonModules')
+        </code>
+        <p>
+            sys.path refers to your Python’s system path. This is the list of
+directories that Python goes through to search for modules and files. The
+code above appends the folder ‘C:\MyPythonModules’ to your system
+path.
+        </p>
+        <p>
+            Now you can put prime.py in C:\MyPythonModules and
+checkIfPrime.py in any other folder of your choice.
+        </p>
+
+        <h2>Next Steps</h2>
+		<p>
+			Lets work with [link:#api/en/core/Files files].
+		</p>
+
+	</body>
+</html>

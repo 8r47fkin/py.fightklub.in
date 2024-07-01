@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>Hello World!</h1>
+		<h2>Using the Python Shell, IDLE and Writing our
+            FIRST program</h2>
+        <br>
+		<p>
+			We’ll be writing our code using the IDLE program that comes bundled
+with our Python interpreter.
+		</p>
+
+		<p>
+			To do that, let’s first launch the IDLE program. You launch the IDLE
+program like how you launch any other programs. For instance on
+Windows 8, you can search for it by typing “IDLE” in the search box.
+Once it is found, click on IDLE (Python GUI) to launch it. You’ll be
+presented with the Python Shell shown below.
+		</p>
+        <img src="/files/scrnsht/01.png" alt="IDLE GUI">
+        <p>
+            The Python Shell allows us to use Python in interactive mode. This
+means we can enter one command at a time. The Shell waits for a
+command from the user, executes it and returns the result of the
+execution. After this, the Shell waits for the next command.
+        </p>
+        <p>
+            Try typing the following into the Shell. The lines starting with >>> are the
+commands you should type while the lines after the commands show the
+results.
+        </p>
+        <code>
+            >>> 2+3
+            5
+            >>> 3>2
+            True
+            >>> print (‘Hello World’)
+            Hello World
+        </code>
+        <p>
+            When you type 2+3, you are issuing a command to the Shell, asking it to
+evaluate the value of 2+3. Hence, the Shell returns the answer 5. When
+you type 3>2, you are asking the Shell if 3 is greater than 2. The Shell
+replies True. Finally, print is a command asking the Shell to display
+the line Hello World.
+        </p>
+        <p>
+            The Python Shell is a very convenient tool for testing Python commands,
+especially when we are first getting started with the language. However, if
+you exit from the Python Shell and enter it again, all the commands you
+type will be gone. In addition, you cannot use the Python Shell to create
+an actual program. To code an actual program, you need to write your
+code in a text file and save it with a .py extension. This file is known as a
+Python script.
+        </p>
+        <p>
+            To create a Python script, click on File > New File in the top menu of our
+Python Shell. This will bring up the text editor that we are going to use to
+write our very first program, the “Hello World” program. Writing the “Hello
+World” program is kind of like the rite of passage for all new
+programmers. We’ll be using this program to familiarize ourselves with
+the IDLE software.
+        </p>
+        <p>
+            Type the following code into the text editor (not the Shell).
+        </p>
+        <code>
+            #Prints the Words “Hello World”
+            print (“Hello World”)
+        </code>
+        <p>
+            You should notice that the line #Prints the Words “Hello World”
+is in red while the word “print” is in purple and “Hello World” is in
+green. This is the software’s way of making our code easier to read. The
+words “print” and “Hello World” serve different purposes in our
+program, hence they are displayed using different colors. We’ll go into
+more details in later section.
+        </p>
+        <p>
+            The line #Prints the Words “Hello World” (in red) is actually not
+part of the program. It is a comment written to make our code more
+readable for other programmers. This line is ignored by the Python
+interpreter. To add comments to our program, we type a # sign in front of
+each line of comment, like this:
+        </p>
+        <code>
+            #This is a comment
+            #This is also a comment
+            #This is yet another comment
+        </code>
+        <p>
+            Alternatively, we can also use three single quotes (or three double
+quotes) for multiline comments, like this:
+        </p>
+        <code>
+            ’’’
+This is a comment
+This is also a comment
+This is yet another comment
+’’’
+        </code>
+        <p>
+            Now click File > Save As… to save your code. Make sure you save it with
+the .py extension.
+        </p>
+        <p>
+            Done? Voilà! You have just successfully written your first Python
+program.
+        </p>
+        <p>
+            Finally click on Run > Run Module to execute the program (or press F5).
+You should see the words Hello World printed on your Python Shell.
+        </p>
+
+		<h2>Next Steps</h2>
+
+		<p>
+			You're now ready to enter into the realm of [link:#api/en/programming/variables-and-operators variables and operators].
+		</p>
+
+	</body>
+</html>

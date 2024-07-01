@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>Define our own Functions</h1>
+		
+        <br>
+		<p>
+			We can define our own functions in Python and reuse them throughout
+the program. The syntax for defining a function is as follows:
+<code>
+        def functionName(parameters): code detailing what the
+        function should do return [expression]
+</code>
+There are two keywords here, def and return.
+		</p>
+        <p>
+            def tells the program that the indented code from the next line onwards
+is part of the function. return is the keyword that we use to return an
+answer from the function. There can be more than one return
+statements in a function. However, once the function executes a return
+statement, the function will exit. If your function does not need to return
+any value, you can omit the return statement. Alternatively, you can
+write return or return None.
+        </p>
+        <p>
+            Let us now define our first function. Suppose we want to determine if a
+given number is a prime number. Here’s how we can define the function
+using the modulus (%) operator we learned while Operating Operators and the for
+loop and if statement we learned in Looping.
+        </p>
+        <code>
+            def checkIfPrime (numberToCheck): for x in range(2,
+            numberToCheck): if (numberToCheck%x == 0):
+                return False return True
+        </code>
+        <p>
+            In the function above, lines 2 and 3 uses a for loop to divide the given
+parameter numberToCheck by all numbers from 2 to numberToCheck
+- 1 to determine if the remainder is zero. If the remainder is zero,
+numberToCheck is not a prime number. Line 4 will return False and the
+function will exit.
+        </p>
+        <p>
+            If by last iteration of the for loop, none of the division gives a remainder
+of zero, the function will reach Line 5, and return True. The function will
+then exit.
+        </p>
+        <p>
+            To use this function, we type checkIfPrime(13) and assign it to a
+variable like this
+<code>
+    answer = checkIfPrime(13)
+</code>
+Here we are passing in 13 as the parameter. We can then print the
+answer by typing print(answer). We’ll get the output: True.
+        </p>
+
+        <h2>Next Steps</h2>
+		<p>
+			Lets get into [link:#api/en/core/VariableScope Variable Scope].
+		</p>
+
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>Importing Modules</h1>
+		
+        <br>
+		<p>
+			Python comes with a large number of built-in functions. These functions
+are saved in files known as modules. To use the built-in codes in Python
+modules, we have to import them into our programs first. We do that by
+using the import keyword. There are three ways to do it.
+		</p>
+        <p>
+            The first way is to import the entire module by writing import
+moduleName.
+        </p>
+        <p>
+            For instance, to import the random module, we write import random.
+To use the randrange() function in the random module, we write
+random.randrange(1, 10).
+        </p>
+        <p>
+            If you find it too troublesome to write random each time you use the
+function, you can import the module by writing import random as r
+(where r is any name of your choice). Now to use the randrange()
+function, you simply write r.randrange(1, 10).
+        </p>
+        <p>
+            The third way to import modules is to import specific functions from the
+module by writing from moduleName import name1[, name2[, ...
+nameN]].
+        </p>
+        <p>
+            For instance, to import the randrange() function from the random
+module, we write from random import randrange. If we want to
+import more than one functions, we separate them with a comma. To
+import the randrange() and randint() functions, we write from
+random import randrange, randint. To use the function now, we
+do not have to use the dot notation anymore. Just write randrange(1,
+10).
+        </p>
+
+        <h2>Next Steps</h2>
+		<p>
+			Lets create modules now with [link:#api/en/core/CreatingModule creating modules].
+		</p>
+
+	</body>
+</html>

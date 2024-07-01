@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>[name]</h1>
+		
+        <br>
+		<p>
+			Another useful keyword for loops is the continue keyword. When we
+use continue, the rest of the loop after the keyword is skipped for that
+iteration. An example will make it clearer.
+		</p>
+        <code>
+            j = 0
+            for i in range(5): j = j + 2
+                print (‘\ni = ’, i,‘, j = ’, j) if j == 6:
+            continue print (‘I will be skipped over if j=6’)
+        </code>
+        <p>
+            You will get the following output:
+        </p>
+        <code>
+            i = 0 , j = 2
+            I will be skipped over if j=6
+
+            i = 1 , j = 4
+            I will be skipped over if j=6
+
+            i = 2 , j = 6
+
+            i = 3 , j = 8
+            I will be skipped over if j=6
+
+            i = 4 , j = 10
+            I will be skipped over if j=6
+        </code>
+        <p>
+            When j = 6, the line after the continue keyword is not printed. Other
+than that, everything runs as per normal.
+        </p>
+
+        <h2>Next Steps</h2>
+		<p>
+			Let's Try a last subtopic in this topic, except and that's called [link:#api/en/core/TryExcept Try, Except].
+		</p>
+
+	</body>
+</html>

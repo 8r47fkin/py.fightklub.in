@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>[name]</h1>
+		
+        <br>
+		<p>
+			When working with loops, sometimes you may want to exit the entire loop
+when a certain condition is met. To do that, we use the break keyword.
+Run the following program to see how it works.
+		</p>
+        <code>
+            j = 0
+            for i in range(5): j = j + 2
+print (‘i = ’, i,‘, j = ’, j) if j == 6: break
+        </code>
+        <p>
+            You should get the following output.
+        </p>
+        <code>
+            i = 0 , j = 2
+            i = 1 , j = 4
+            i = 2 , j = 6
+        </code>
+        <p>
+            Without the break keyword, the program should loop from i = 0 to i = 4
+because we used the function range(5). However with the break
+keyword, the program ends prematurely at i = 2. This is because when i =
+2, j reaches the value of 6 and the break keyword causes the loop to
+end.
+        </p>
+        <p>
+            In the example above, notice that we used an if statement within a for
+loop. It is very common for us to ‘mix-and-match’ various control tools in
+programming, such as using a while loop inside an if statement or
+using a for loop inside a while loop. This is known as a nested control
+statement.
+        </p>
+        
+
+        <h2>Next Steps</h2>
+		<p>
+			Break ends, lets [link:#api/en/core/Continue Continue].
+		</p>
+
+	</body>
+</html>

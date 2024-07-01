@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="../../../" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+        <h1>[name]</h1>
+		
+        <br>
+		<p>
+			String refers to text.
+		</p>
+        <p>
+            To declare a string, you can either use variableName = ‘initial value’ (single quotes) or variableName = “initial value” (double quotes)
+        </p>
+        <i>Example:</i>
+        <code>
+            userName = ‘Bharath’, userSpouseName = “Bairavi”, userAge = ‘33’
+        </code>
+        <p>
+            In the last example, because we wrote userAge = ‘33’, userAge is a string. In contrast, if you wrote userAge = 30 (without quotes), userAge is an integer.
+        </p>
+        <p>
+            We can combine multiple substrings by using the concatenate sign (+). For instance, “Bharath” + “Kumar” is equivalent to the string “BharathKumar”.
+        </p>
+        <p>
+            <u>Built-In String Functions</u>
+        </p>
+        <p>
+            Python includes a number of built-in functions to manipulate strings. A function is simply a block of reusable code that performs a certain  ask. We’ll discuss functions in greater depth in later section.
+
+        </p>
+        <p>
+            An example of a function available in Python is the upper() method for strings. You use it to capitalize all the letters in a string. For instance, ‘Bharath’.upper() will give us the string “BHARATH”. You can refer to Appendix A for more examples and sample codes on how to use Python’s built-in string methods.
+        </p>
+        <p>
+            <u>Formatting Strings using the % Operator</u>
+        </p>
+        <p>
+            Strings can also be formatted using the % operator. This gives you greater control over how you want your string to be displayed and stored. The syntax for using the % operator is
+        </p>
+        <code>
+            “string to be formatted” %(values or variables to be inserted into string, separated by commas)
+        </code>
+        <p>
+            There are three parts to this syntax. First we write the string to be
+formatted in quotes. Next we write the % symbol. Finally, we have a pair
+of round brackets ( ) within which we write the values or variables to be
+inserted into the string. This round brackets with values inside is actually
+known as a tuple, a data type that we’ll cover in the chapter later.
+        </p>
+        <p>
+            Type the following code in IDLE and run it.
+        </p>
+        <code>
+            brand = ‘Dell’ 
+            exchangeRate = 1.235235245
+        </code>
+        <code>
+            message = ‘The price of this %s laptop is %d USD and the exchange rate is %4.2f USD to 1 EUR’ %(brand, 1299, exchangeRate)
+        </code>
+        <code>
+            print (message)
+        </code>
+        <p>
+            In the example above, the string ‘The price of this %s laptop is %d USD and the exchange rate is %4.2f USD to 1 EUR’ is the string that we want to format. We use the %s, %d and %4.2f formatters as placeholders in the string.
+        </p>
+        <p>
+            These placeholders will be replaced with the variable brand, the value 1299 and the variable exchangeRate respectively, as indicated in the round brackets. If we run the code, we’ll get the output below.
+        </p>
+        <code>
+            The price of this Dell laptop is 1299 USD and the exchange rate is 1.24 USD to 1 EUR
+        </code>
+        <p>
+            The %s formatter is used to represent a string (“Dell” in this case) while the %d formatter represents an integer (1299). If we want to add spaces before an integer, we can add a number between % and d to indicate the desired length of the string. For instance “%5d” %(123) will give us “123” (with 2 spaces in front and a total length of 5).
+        </p>
+        <p>
+            The %f formatter is used to format floats (numbers with decimals). Here we format it as %4.2f where 4 refers to the total length and 2 refers to 2 decimal places. If we want to add spaces before the number, we can format is as %7.2f, which will give us “ 1.24” (with 2 decimal places, 3 spaces in front and a total length of 7).
+        </p>
+        <p>
+            <u>Formatting Strings using the format() method</u>
+        </p>
+        <p>
+            In addition to using the % operator to format strings, Python also provides
+us with the format() method to format strings. The syntax is
+        </p>
+        <code>
+            “string to be formatted” . format(values or variables to be inserted into string, separated by commas)
+        </code>
+        <p>
+            When we use the format method, we do not use %s, %f or %d as placeholders. Instead we use curly brackets, like this:
+        </p>
+        <code>
+            message = ‘The price of this {0:s} laptop is {1:d} USD and the exchange rate is {2:4.2f} USD to 1 EUR’.format(‘Dell’, 1299, 1.235235245)
+        </code>
+        <p>
+            Inside the curly bracket, we first write the position of the parameter to use, followed by a colon. After the colon, we write the formatter. There should not be any spaces within the curly brackets.
+        </p>
+        <p>
+            When we write format(‘Dell’, 1299, 1.235235245), we are passing in three parameters to the format() method. Parameters are data that the method needs in order to perform its task. The parameters are ‘Dell’, 1299 and 1.235235245.
+        </p>
+        <p>
+            The parameter ‘Dell’ has a position of 0, 1299 has a position of 1 and 1.235235245 has a position of 2.
+        </p>
+        <p>
+            Positions always start from ZERO.
+        </p>
+        <p>
+            When we write {0:s}, we are asking the interpreter to replace {0:s} with
+the parameter in position 0 and that it is a string (because the formatter is
+‘s’).
+        </p>
+        <p>
+            When we write {1:d}, we are referring to the parameter in position 1,
+which is an integer (formatter is d).
+        </p>
+        <p>
+            When we write {2:4.2f}, we are referring to the parameter in position 2,
+which is a float and we want it to be formatted with 2 decimal places and
+a total length of 4 (formatter is 4.2f).
+        </p>
+        <p>
+            If we print message, we’ll get
+The price of this Dell laptop is 1299 USD and the
+exchange rate is 1.24 USD to 1 EUR
+        </p>
+        <p>
+            Note: If you do not want to format the string, you can simply write
+        </p>
+        <code>
+            message = ‘The price of this {} laptop is {} USD and the exchange rate is {} USD to 1 EUR’. format(‘Dell’, 1299, 1.235235245)
+        </code>
+        <p>
+            Here we do not have to specify the position of the parameters. The interpreter will replace the curly brackets based on the order of the parameters provided. We’ll get
+        </p>
+        <p>
+            The price of this Dell laptop is 1299 USD and the exchange rate is 1.235235245 USD to 1 EUR
+        </p>
+        <p>
+            The format() method can be kind of confusing to beginners. In fact,
+string formatting can be more fanciful than what we’ve covered here, but
+what we’ve covered is sufficient for most purposes. To get a better
+understanding of the format() method, try the following program.
+        </p>
+        <code>
+            message1 = ‘{0} is easier than {1}’.format(‘Python’,‘Java’)
+            message2 = ‘{1} is easier than {0}’.format(‘Python’,‘Java’)
+            message3 = ‘{:10.2f} and {:d}’.format(1.234234234, 12)
+            message4 = ‘{}’.format(1.234234234)
+        </code>
+        <code>
+            print (message1)
+            #You’ll get ‘Python is easier than Java’
+        </code>
+        <code>
+            print (message2)
+            #You’ll get ‘Java is easier than Python’
+        </code>
+        <code>
+            print (message3)
+            #You’ll get ‘ 1.23 and 12’
+            #You do not need to indicate the positions of the parameters.
+        </code>
+        <code>
+            print (message4)
+            #You’ll get 1.234234234. No formatting is done.
+        </code>
+        <p>
+            You can use the Python Shell to experiment with the format() method.
+Try typing in various strings and see what you get.
+        </p>
+
+        <h2>Next Steps</h2>
+
+		<p>
+			Let's learn [link:#api/en/programming/TypeCasting Type Casting] in python.
+		</p>
+
+	</body>
+</html>
