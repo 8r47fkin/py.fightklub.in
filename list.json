@@ -1,0 +1,120 @@
+{
+
+	"en": {
+
+		"Introduction": {
+
+			"Python, what Python?": {
+				"What is Python?": "api/en/introduction/what-is-python",
+				"Why learn Python?": "api/en/introduction/why-learn-python"
+			},
+
+			"Getting ready for Python": {
+				"Installing interpreter": "api/en/introduction/installing-interpreter",
+				"Hello Python World!": "api/en/introduction/write-first-code"
+			}
+
+		},
+
+		"World of Programming": {
+
+			"Variables and Operators": {
+                "Realm of Variables and Operators": "api/en/programming/variables-and-operators",
+				"What are Variables?": "api/en/programming/variables",
+				"Naming a Variable": "api/en/programming/naming-variables",
+				"The Assignment Sign": "api/en/programming/assignment-sign",
+				"Basic Operators": "api/en/programming/basic-operators",
+				"More Assignment Operators": "api/en/programming/more-operators"
+			},
+
+			"Data Types in Python": {
+                "Data Types": "api/en/programming/data-types",
+				"Integers": "api/en/programming/Integers",
+				"Float": "api/en/programming/Float",
+				"String": "api/en/programming/String",
+				"Type Casting in Python": "api/en/programming/TypeCasting",
+				"List": "api/en/programming/List",
+				"Tuple": "api/en/programming/Tuple",
+				"Dictionary": "api/en/programming/Dictionary"
+			},
+
+			"Making Your Program Interactive": {
+                "Interactive Program": "api/en/programming/Interactive",
+				"Input()": "api/en/programming/Input",
+				"Print()": "api/en/programming/Print",
+				"Triple Quotes": "api/en/programming/TripleQuotes",
+				"Escape Characters": "api/en/programming/EscapeCharacters"
+			},
+
+			"Making Choices and Decisions": {
+				"Choices and Decisions": "api/en/core/ChoicesAndDecisions",
+				"Condition Statements": "api/en/core/ConditionStatements",
+				"If Statement": "api/en/core/IfStatement",
+				"Inline If": "api/en/core/InlineIf",
+				"For Loop": "api/en/core/ForLoop",
+				"While Loop": "api/en/core/WhileLoop",
+				"Break": "api/en/core/Break",
+				"Continue": "api/en/core/Continue",
+				"Try, Except": "api/en/core/TryExcept"
+			},
+
+			"Function and Modules": {
+				"Function and Modules": "api/en/core/FunctionsModules",
+				"What are Functions?": "api/en/core/whatFunctions",
+				"Defining your own Functions": "api/en/core/DefineFunctions",
+				"Variable Scope": "api/en/core/VariableScope",
+				"Importing Modules": "api/en/core/ImportingModules",
+				"Creating Our Own Module": "api/en/core/CreatingModule"
+			},
+
+			"Working with Files": {
+				"Working with Files": "api/en/core/Files",
+				"Opening and Reading Text Files": "api/en/core/OpenReadFiles",
+				"Using a For Loop to Read Text Files": "api/en/core/ForLoopReadTextFiles",
+				"Writing to a Text File": "api/en/core/WritingTextFile",
+				"Opening and Reading Text Files by Buffer Size": "api/en/core/ORbyBufferSize",
+				"Opening, Reading and Writing Binary Files": "api/en/core/ORWBinaryFiles",
+				"Deleting and Renaming Files": "api/en/core/DeletingRenamingFiles"
+			}
+
+		},
+
+		"Project": {
+
+			"Math and Bodmas": {
+				"projects time": "api/en/projects/ProjectsTime",
+				"myPythonFunctions.py": "api/en/projects/ProjectsTime",
+				"mathGame.py": "api/en/projects/ProjectsTime",
+				"Challenge Yourself": "api/en/projects/ProjectsTime"
+			}
+
+		}
+
+	},
+
+    "ta": {
+
+		"Vannakam di Mappilai": {
+
+			"Adi Viraivil": {
+				"Vaathi Coming": "api/ta/introduction/Installation",
+				"Want to contribute?": "api/ta/contribute"
+			}
+
+		}
+
+	},
+
+    "hi": {
+
+		"Namaste, Chai Peelo Fraands": {
+
+			"Rukho jara Sabhar Karo": {
+				"Jaldi aaraha hei": "api/hi/introduction/Installation",
+				"Want to contribute?": "api/hi/contribute"
+			}
+
+		}
+
+	}
+}
