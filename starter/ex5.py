@@ -1,3 +1,6 @@
+# printing variables in a functional way with f in front of the print string area
+#doing calculations of the maths functions in variables
+
 name = 'Bharath Kumar'
 age = 33
 height = 71

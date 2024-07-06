@@ -1,3 +1,5 @@
+# importing packages to use them for some purposes
+
 from sys import argv
 script, first, second, third = argv
 

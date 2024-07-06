@@ -1,3 +1,5 @@
+# leveling up, first importing the argv and then in arguments while opening the file 
+
 from sys import argv
 
 script, input_file = argv

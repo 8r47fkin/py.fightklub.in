@@ -1,3 +1,5 @@
+# importing packages and prompting users for answers and print out as a overall sentences
+
 from sys import argv
 
 script, user_name = argv

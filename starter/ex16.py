@@ -1,3 +1,6 @@
+#erasing a file
+# asking users input and making them write the doc, three lines to be exact
+
 from sys import argv
 
 script, filename = argv

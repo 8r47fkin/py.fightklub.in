@@ -1,3 +1,5 @@
+# concatenate and also practice to insert a string or unassigned variable inside a format
+
 print("Welcome to fightklub.in.")
 print("Rule1: we don't talk about {}." .format('fightklub.in'))
 print("Rule2: remember rule 1.")

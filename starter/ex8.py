@@ -1,3 +1,5 @@
+# formatter deep dive
+
 formatter = "{} {} {} {}"
 
 print(formatter.format(1, 2, 3, 4))
@@ -11,3 +13,9 @@ print(formatter.format(
     "Rule1 is we don't",
     "talk about fightklub.in"
 ))
+
+# practicing formatter
+
+klub = "fightklub.in"
+canla = "Welcome to {}, the {} of {} is we don't talk about {}"
+print(canla.format(klub, "first rule", klub, klub))

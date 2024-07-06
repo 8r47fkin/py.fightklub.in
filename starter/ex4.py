@@ -1,3 +1,5 @@
+# making a variable and doing calculations with variable and printing out using variables in print in middle of sentences or strings, also doing maths calculation
+
 cars = 100
 space_in_car = 4.0
 drivers = 30

@@ -1,3 +1,5 @@
+# check out the spacing after the define command, I made a mistake there as, coming from javaScript the syntax or function doesn't have any closure
+
 def cheese_and_cracker(cheese_count, boxes_of_crackers):
     print(f"you have {cheese_count} cheeses!")
     print(f"you have {boxes_of_crackers} boxes of crackers!")

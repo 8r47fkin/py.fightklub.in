@@ -1,3 +1,5 @@
+#user input and store it as variable 
+
 print("how old are you?", end='')
 age = input()
 print("how tall are you?", end='')

@@ -21,6 +21,7 @@ print(f"I said: {x}")
 print(f"I also said: '{y}'")
 
 # assigned a boolean, then a variable, then checked it with boolean
+# format to insert variable
 hilarious = False
 joke_evaluation = "Isn't that joke funny?! {}"
 print(joke_evaluation.format(hilarious))

@@ -1,3 +1,5 @@
+#copy from one file to another
+
 from sys import argv
 from os.path import exists
 
