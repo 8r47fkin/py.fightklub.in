@@ -22,9 +22,9 @@ then, creators of C, C++, C#, python, Java, Javascript, HTML, CSS web and anythi
 Hope you got the direction
 
 
-Hello World!!!
+World, Hello!
 
-I am using this repository to learn anything and everything
+I am using this repository to LEARN.random();
 
 I have used three.js libraries documentation file as the framework for working on this, as was trying  to learn things and felt, 
 this had good fonting style and tweaking that would give a good understanding for me to learn about coding
