@@ -142,7 +142,7 @@ function onDocumentLoad() {
 	button.innerHTML = '<img src="../files/ic_mode_edit_black_24dp.svg">';
 	button.addEventListener( 'click', function () {
 
-		window.open( 'https://github.com/mrdoob/three.js/blob/dev/docs/' + section + '/' + localizedPath + '.html' );
+		window.open( 'https://github.com/8r47fkin/py.fightklub.in/' );
 
 	}, false );
 
