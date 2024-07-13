@@ -7,17 +7,65 @@
     <link rel="shortcut icon" href="../files/favicon_white.ico" media="(prefers-color-scheme: dark)"/>
 	<link rel="shortcut icon" href="../files/favicon.ico" media="(prefers-color-scheme: light)" />
 	<link rel="stylesheet" type="text/css" href="../files/main.css">
+    <style>
+        .path {
+            stroke-dasharray: 200;
+            stroke-dashoffset: 100;
+            animation: dash 15s linear alternate infinite;
+            }
+
+            @keyframes dash {
+            from {
+                stroke-dashoffset: 1000;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+            }
+    </style>
 </head>
 <body>
-
     <div id="panel">
 
         <div id="header">
-            <h1><a href="https://fightklub.in">fightklub.in</a></h1>
-
+            <a href="https://py.fightklub.in">
+            <svg viewBox="0 0 263 100" height="60">
+                <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1" class="path">
+        
+                    <path class="path"
+                        d="m 39.778345,33.991664 h -0.28952 c -0.59871,-0.173858 -1.38085,-0.347716 -2.34644,-0.521423 -0.96563,-0.193134 -1.81538,-0.28989 -2.54925,-0.28989 -2.33677,0 -4.03627,0.521461 -5.09844,1.564308 -1.04284,1.023534 -1.5643,2.887182 -1.5643,5.590904 v 1.100788 h 9.8203 v 4.577046 h -9.64648 v 27.780699 h -5.44608 V 46.013397 h -3.67899 v -4.577046 h 3.67899 v -1.071836 c 0,-3.843137 0.95596,-6.788259 2.86787,-8.835364 1.91195,-2.066419 4.67358,-3.099629 8.28499,-3.099629 1.21667,0 2.30782,0.05783 3.27345,0.173859 0.98491,0.116031 1.88292,0.25096 2.69405,0.405581 z"
+                />
+                    <path class="el"
+                        d="m 51.486096,35.618173 h -6.14132 v -5.648844 h 6.14132 z m -0.34772,37.774829 h -5.44607 V 41.035257 h 5.44607 z"
+                />
+                    <path class="el"
+                        d="m 87.256152,70.022966 c 0,5.484699 -1.24566,9.511332 -3.73694,12.079861 -2.49127,2.56853 -6.32477,3.852813 -11.500456,3.852813 -1.718816,0 -3.398967,-0.12548 -5.040529,-0.376441 -1.622211,-0.231685 -3.225146,-0.569726 -4.808769,-1.013896 V 79.00335 h 0.28989 c 0.888378,0.347717 2.298142,0.772498 4.229405,1.274608 1.931225,0.521424 3.86245,0.782136 5.793679,0.782136 1.85397,0 3.38929,-0.222237 4.60599,-0.666256 1.21667,-0.44417 2.16295,-1.062198 2.83888,-1.853971 0.67593,-0.753184 1.15877,-1.660876 1.44843,-2.723036 0.28989,-1.062161 0.43453,-2.249878 0.43453,-3.563112 v -2.954797 c -1.64156,1.313234 -3.21551,2.298179 -4.72184,2.954797 -1.48705,0.637304 -3.38933,0.955918 -5.706781,0.955918 -3.862488,0 -6.933127,-1.390451 -9.211994,-4.171427 -2.259515,-2.80029 -3.389291,-6.739994 -3.389291,-11.819112 0,-2.780976 0.38623,-5.175723 1.158728,-7.184202 0.791811,-2.027792 1.863647,-3.775559 3.215508,-5.243263 1.255295,-1.371174 2.780977,-2.433373 4.577008,-3.186557 1.796032,-0.77246 3.582426,-1.158728 5.359182,-1.158728 1.87328,0 3.43756,0.193134 4.69289,0.579364 1.27461,0.366992 2.61679,0.936643 4.02659,1.70914 l 0.34772,-1.390488 h 5.09843 z m -5.44608,-5.214312 V 47.166877 c -1.44842,-0.656617 -2.80029,-1.1201 -4.05558,-1.390488 -1.23598,-0.289512 -2.47196,-0.434532 -3.70794,-0.434532 -2.993427,0 -5.349509,1.004258 -7.068325,3.012737 -1.718778,2.008479 -2.578167,4.924611 -2.578167,8.748473 0,3.630689 0.637304,6.382715 1.911912,8.256 1.274608,1.873285 3.389291,2.809927 6.34409,2.809927 1.58358,0 3.1672,-0.299338 4.75083,-0.898016 1.60289,-0.61799 3.07064,-1.438752 4.40318,-2.462324 z"
+                />
+                    <path class="el"
+                        d="m 120.76438,73.392873 h -5.44604 V 54.968961 c 0,-1.487055 -0.0869,-2.877543 -0.26079,-4.171465 -0.17386,-1.313234 -0.49247,-2.336768 -0.95599,-3.070639 -0.4828,-0.811124 -1.17804,-1.409802 -2.0857,-1.796069 -0.90769,-0.405544 -2.08573,-0.608315 -3.53416,-0.608315 -1.48705,0 -3.04168,0.366992 -4.66393,1.100787 -1.62222,0.733871 -3.17686,1.670514 -4.663905,2.809966 v 24.159647 h -5.44607 V 28.318 h 5.44607 v 16.309229 c 1.699455,-1.409802 3.456905,-2.510589 5.272255,-3.3024 1.81534,-0.791811 3.67899,-1.187717 5.5909,-1.187717 3.49554,0 6.16063,1.052523 7.99529,3.157569 1.83466,2.105045 2.75199,5.137058 2.75199,9.096075 z"
+                />
+                    <path class="el"
+                        d="m 145.5587,72.796788 c -1.02357,0.270236 -2.14367,0.492473 -3.36034,0.666255 -1.19739,0.173859 -2.26919,0.260788 -3.21551,0.260788 -3.3024,0 -5.81299,-0.88834 -7.53181,-2.665059 -1.71877,-1.776755 -2.57816,-4.62531 -2.57816,-8.5457 V 45.305827 h -3.67899 v -4.577045 h 3.67899 v -9.298886 h 5.44603 v 9.298886 h 11.23979 v 4.577045 h -11.23979 v 14.74492 c 0,1.699465 0.0385,3.032013 0.11603,3.997644 0.0771,0.946281 0.34772,1.834659 0.81113,2.665096 0.42485,0.772498 1.00426,1.342224 1.73813,1.709141 0.75318,0.347716 1.8926,0.521423 3.41824,0.521423 0.88838,0 1.81538,-0.12548 2.78098,-0.376441 0.96563,-0.270236 1.66087,-0.492472 2.08573,-0.666255 h 0.28989 z"
+                />
+                    <path class="path"
+                        d="m 180.83695,72.546159 h -7.1842 l -12.97784,-14.165556 -3.53416,3.36034 v 10.805216 h -5.44607 V 27.471286 h 5.44607 v 28.910476 l 15.72987,-16.193348 h 6.86551 l -15.03462,14.947729 z"
+                />
+                    <path class="el"
+                        d="m 191.65574,72.828397 h -5.44607 V 27.753524 h 5.44607 z"
+                />
+                    <path class="el"
+                        d="m 225.2713,71.755393 h -5.44603 V 68.16333 c -1.8347,1.448428 -3.59211,2.558891 -5.27229,3.331351 -1.68016,0.772498 -3.53413,1.158766 -5.56192,1.158766 -3.39897,0 -6.04475,-1.03321 -7.93735,-3.099629 -1.8926,-2.085732 -2.83891,-5.137096 -2.83891,-9.154016 V 39.397648 h 5.44607 v 18.42395 c 0,1.641524 0.0771,3.051326 0.23168,4.229367 0.15459,1.158765 0.48284,2.153348 0.98495,2.983748 0.52142,0.849751 1.19735,1.467741 2.02779,1.854009 0.83044,0.38623 2.03743,0.579364 3.62105,0.579364 1.4098,0 2.94512,-0.366992 4.606,-1.100787 1.68015,-0.733871 3.24446,-1.670514 4.69289,-2.809966 V 39.397648 h 5.44603 z"
+                />
+                    <path class="el"
+                        d="m 260.18091,55.556612 c 0,2.703685 -0.38626,5.137058 -1.15872,7.300044 -0.75319,2.162948 -1.77672,3.978293 -3.07068,5.446035 -1.37118,1.525682 -2.87751,2.674772 -4.51907,3.447269 -1.64156,0.753184 -3.44723,1.129777 -5.41708,1.129777 -1.8347,0 -3.4376,-0.222237 -4.80877,-0.666293 -1.37118,-0.424857 -2.72304,-1.004221 -4.05558,-1.738092 l -0.34772,1.506331 h -5.09847 V 26.90681 h 5.44611 v 16.106457 c 1.52568,-1.255294 3.14789,-2.278866 4.86671,-3.070677 1.71878,-0.811087 3.65,-1.216668 5.79367,-1.216668 3.82383,0 6.83656,1.467742 9.03814,4.403188 2.22093,2.935483 3.33139,7.077959 3.33139,12.427502 z m -5.61989,0.144756 c 0,-3.86245 -0.6373,-6.788258 -1.91191,-8.777424 -1.27461,-2.008479 -3.33135,-3.012737 -6.17027,-3.012737 -1.58362,0 -3.18652,0.347717 -4.80877,1.042885 -1.62221,0.675931 -3.12858,1.554633 -4.51906,2.636145 v 18.539792 c 1.54499,0.695245 2.86786,1.178041 3.96865,1.448429 1.12014,0.270236 2.38507,0.405543 3.79487,0.405543 3.01274,0 5.36882,-0.984907 7.06832,-2.954797 1.71878,-1.989165 2.57817,-5.098431 2.57817,-9.327836 z"
+                />
+                </g>
+            </svg> 
+        </a>
+        <h1>.in</h1>
             <div id="sections">
                 <span class="selected">Learn</span>
-                <a href="../examples/">Live</a>
+                <a href="https://github.com/8r47fkin/py.fightklub.in">Play</a>
             </div>
 
             <div id="expandButton"></div>
@@ -67,27 +115,15 @@
 
 			const list = await ( await fetch( 'list.json' ) ).json();
 
-			// *BufferGeometry to *Geometry
-
-			if ( /Instanced/.exec( window.location.hash ) === null && /([\w]+)BufferGeometry$/.exec( window.location.hash ) ) {
-
-				window.location.hash = window.location.hash.replace( 'BufferGeometry', 'Geometry' );
-
-			}
-
 			const hash = window.location.hash.substring( 1 );
 
-			// Localisation
-
-			let language = 'en';
+            let language = 'en';
 
 			if ( /^(api|manual|examples)/.test( hash ) ) {
 
 				const hashLanguage = /^(api|manual|examples)\/(en|ta|hi)\//.exec( hash );
 
 				if ( hashLanguage === null ) {
-
-					// Route old non-localised api links
 
 					window.location.hash = hash.replace( /^(api|manual|examples)/, '$1/en' );
 
@@ -117,8 +153,6 @@
 
 			}
 
-			// Functionality for hamburger button (on small devices)
-
 			expandButton.onclick = function ( event ) {
 
 				event.preventDefault();
@@ -133,8 +167,6 @@
 
 			};
 
-
-			// Functionality for search/filter input field
 
 			filterInput.onfocus = function () {
 
@@ -166,16 +198,10 @@
 
 			};
 
-			// Activate content and title change on browser navigation
-
 			window.onpopstate = createNewIframe;
-
-			// Create the navigation panel and configure the iframe
 
 			createNavigation( list, language );
 			createNewIframe();
-
-			// Handle search query
 
 			filterInput.value = extractQuery();
 
@@ -193,8 +219,6 @@
 
 
         }
-
-        // Navigation Panel
 
         function createLink( pageName, pageURL ) {
 
@@ -232,8 +256,6 @@ if ( navigation !== undefined ) {
 
 }
 
-// Create the navigation panel using data from list.js
-
 navigation = document.createElement( 'div' );
 content.appendChild( navigation );
 
@@ -248,8 +270,6 @@ const selectedPage = window.location.hash.substring( 1 );
 
 for ( const section in localList ) {
 
-    // Create sections
-
     const categories = localList[ section ];
 
     const sectionHead = document.createElement( 'h2' );
@@ -257,8 +277,6 @@ for ( const section in localList ) {
     navigation.appendChild( sectionHead );
 
     for ( const category in categories ) {
-
-        // Create categories
 
         const pages = categories[ category ];
 
@@ -274,11 +292,7 @@ for ( const section in localList ) {
 
         for ( const pageName in pages ) {
 
-            // Create page links
-
             const pageURL = pages[ pageName ];
-
-            // Localisation
 
             const listElement = document.createElement( 'li' );
             categoryContent.appendChild( listElement );
@@ -286,15 +300,11 @@ for ( const section in localList ) {
             const linkElement = createLink( pageName, pageURL );
             listElement.appendChild( linkElement );
 
-            // select current page
-
             if ( pageURL === selectedPage ) {
 
                 linkElement.classList.add( 'selected' );
 
             }
-
-            // Gather the main properties for the current subpage
 
             pageProperties[ pageName ] = {
                 section: section,
@@ -303,13 +313,9 @@ for ( const section in localList ) {
                 linkElement: linkElement
             };
 
-            // Gather the document titles (used for easy access on browser navigation)
-
             titles[ pageURL ] = pageName;
 
         }
-
-        // Gather the category elements for easy access on filtering
 
         categoryElements.push( categoryContent );
 
@@ -318,8 +324,6 @@ for ( const section in localList ) {
 }
 
 }
-
-		// Auto change language url. If a reader open a document in English, when they click "ta", the document they read will auto change into Tamizh version
 
         function autoChangeUrlLanguage( language ) {
 
@@ -331,8 +335,6 @@ for ( const section in localList ) {
             location.href = docType + language + docLink;
 
 }
-
-// Filtering
 
 function extractQuery() {
 
@@ -359,7 +361,7 @@ return '(?=.*' + string.split( ' ' ).join( ')(?=.*' ) + ')'; // match all words,
 function updateFilter() {
 
 let v = filterInput.value.trim();
-v = v.replace( /\s+/gi, ' ' ); // replace multiple whitespaces with a single one
+v = v.replace( /\s+/gi, ' ' ); 
 
 if ( v !== '' ) {
 
@@ -390,8 +392,6 @@ if ( filterResults !== null && filterResults.length > 0 ) {
 
 } else {
 
-    // Hide all non-matching page names
-
     categoryClassList.add( 'hidden' );
 
 }
@@ -406,7 +406,6 @@ updateLink( v );
 
 function updateLink( search ) {
 
-// update examples link
 
 if ( search ) {
 
@@ -423,8 +422,6 @@ if ( search ) {
 
 function displayFilteredPanel() {
 
-// Show/hide categories depending on their content
-// First check if at least one page in this category is not hidden
 
 categoryElements.forEach( function ( category ) {
 
@@ -445,8 +442,6 @@ categoryElements.forEach( function ( category ) {
         }
 
     }
-
-    // If and only if all page names are hidden, hide the whole category
 
     if ( hideCategory ) {
 
@@ -540,11 +535,6 @@ document.title = subtitle + 'Python docs';
 }
 
 function decomposePageName( pageName, oldDelimiter, newDelimiter ) {
-
-// Helper function for separating the member (if existing) from the pageName
-// For example: 'Geometry.morphTarget' can be converted to
-// ['Geometry', '.morphTarget'] or ['Geometry', '#morphTarget']
-// Note: According RFC 3986 no '#' allowed inside of an URL fragment!
 
 let parts = [];
 

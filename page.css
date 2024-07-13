@@ -211,6 +211,13 @@ strong {
 }
 
 
+/* cutom overwriting overflow of panel
+ */
+
+ #panel, #header, #sections, #expandButton {
+	overflow: hidden;
+ }
+
 /* TODO: Duplicate styles in main.css. Needed here cause button is inside the iframe */
 #button {
 	position: fixed;

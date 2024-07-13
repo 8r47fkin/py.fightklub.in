@@ -1,15 +1,11 @@
 if ( ! window.frameElement && window.location.protocol !== 'file:' ) {
 
-	// navigates to docs home if direct access, e.g.
-	//   https://mrdoob.github.io/three.js/docs/api/en/audio/Audio.html#filter
-	// ->https://mrdoob.github.io/three.js/docs/#api/en/audio/Audio.filter
 
 	const url = new URL( window.location.href );
 
-	// hash route, e.g. #api/en/audio/Audio.filter
+
 	url.hash = url.pathname.replace( /\/docs\/(.*?)(?:\.html)?$/, '$1' ) + url.hash.replace( '#', '.' );
 
-	// docs home, e.g. https://mrdoob.github.io/three.js/docs/
 	url.pathname = url.pathname.replace( /(\/docs\/).*$/, '$1' );
 
 	window.location.replace( url );
@@ -33,7 +29,6 @@ function onDocumentLoad() {
 		case 'api':
 			localizedPath = /\/api\/[A-Za-z0-9\/]+/.exec( pathname ).toString().slice( 5 );
 
-			// Remove localized part of the path (e.g. 'en/' or 'es-MX/'):
 			path = localizedPath.replace( /^[A-Za-z0-9-]+\//, '' );
 
 			break;
