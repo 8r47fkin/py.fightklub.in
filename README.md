@@ -17,7 +17,7 @@ Thank you and all credits to you!!!!
 or the Creators including
 
 Charles babage,
-then, creators of C, C++, C#, python, Java, Javascript, HTML, CSS web and anything and everything,...
+then, creators of Assembly language, C, C++(github acquirer), C#, python, Java, Javascript, HTML, CSS web and anything and everything,...
 
 Hope you got the direction
 
